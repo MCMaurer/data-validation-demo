@@ -38,12 +38,12 @@ res
 ## Links to Open Issues
 
 ```{r post-to-github}
-repo <- create_repo_ref("emilyriederer", "data-validation-demo")
+repo <- create_repo_ref("MCMaurer", "data-validation-demo")
+
 desc_components <- c(
   "Variables: {glue_collapse(column)}",
   "Date: {Sys.Date()}",
-  "Frequency: {n_failed}/{n} ({f_failed})",
-  "See full report at https://emilyriederer.github.io/data-validation-demo/"
+  "Frequency: {n_failed}/{n} ({f_failed})"
 )
 desc_template <- paste(desc_components, collapse = "\n")
 
