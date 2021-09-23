@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Create and populate .Renviron file
         run: |
-          echo GITHUB_PAT="$GH_PAT" >> ~/.Renviron
+          echo GITHUB_PAT="$GITHUB_PAT" >> ~/.Renviron
         shell: bash
         env:
           GH_PAT: ${{secrets.GH_PAT}}
